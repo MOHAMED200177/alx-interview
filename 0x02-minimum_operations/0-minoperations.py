@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""""
-Minimum Operations
+""""Minimum Operations
 """
 
 
@@ -19,5 +18,4 @@ def minOperations(n: int) -> int:
             text += past
     if len(text) != n:
         return 0
-
-return Operations
+    return Operations
