@@ -5,17 +5,17 @@
 
 def minOperations(n: int) -> int:
     """ Minimum Operations needed to get n H characters """
-    past = "H"
-    text = "H"
-    Operations = 0
+    paste = 'H'
+    text = 'H'
+    operations = 0
     while (len(text) < n):
         if n % len(text) == 0:
-            Operations += 2
-            past = text
+            operations += 2
+            paste = text
             text += text
         else:
-            Operations += 1
-            text += past
+            operations += 1
+            text += paste
     if len(text) != n:
         return 0
-    return Operations
+    return operations
